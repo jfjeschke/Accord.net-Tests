@@ -1,5 +1,4 @@
-# Accord.net-Tests
-F# MeetUp ML-Accord.Net Test Scripts
+# F# MeetUp ML-Accord.Net Test Scripts
 
 Try to minimize the errors. Use different kernals, functions, weights, complexity & alphas.
 
