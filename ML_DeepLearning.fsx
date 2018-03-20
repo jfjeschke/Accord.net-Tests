@@ -46,7 +46,7 @@ try
 //__Deep Belief Neural Network___________________________
 
     let wc = new WebClient()
-    let xs = wc.DownloadString(@"http://tsunami.io/data/optdigits-tra.txt").Split([|"\r\n"|], StringSplitOptions.RemoveEmptyEntries)
+    let xs = wc.DownloadString(@"https://raw.githubusercontent.com/primaryobjects/Accord.NET/master/Samples/Neuro/Deep%20Learning/Resources/optdigits-tra.txt").Split([|"\r\n"|], StringSplitOptions.RemoveEmptyEntries)
 
     let (X,y) = 
             [| for i in [0..33..63789] -> ([|for j in i..i+31 do yield! (xs.[j].ToCharArray() |> Array.map (string >> float))|], int xs.[i + 32]) |] 
